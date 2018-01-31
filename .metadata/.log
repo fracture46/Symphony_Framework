@@ -1,0 +1,336 @@
+!SESSION 2018-01-24 08:57:00.018 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 802, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 919, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1777, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1939, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2200, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2813, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2861, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:29.638
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 4480, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 09:00:37.846
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:00:37.846
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content-1003850517.jar at line 59048, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.epp.mpc.ui 8 0 2018-01-24 09:00:50.470
+!MESSAGE org.eclipse.epp.mpc.ui
+!STACK 0
+java.lang.InterruptedException
+	at org.eclipse.epp.internal.mpc.ui.operations.ProfileChangeOperationComputer.run(ProfileChangeOperationComputer.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SESSION 2018-01-24 09:02:45.541 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 09:03:19.763
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:03:19.763
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content-1003850517.jar at line 59048, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-01-24 09:04:36.214
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-01-24 09:04:36.214
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.215
+!MESSAGE Software being installed: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.215
+!MESSAGE Missing requirement: Composer Test plugin 5.2.0.201712021751 (org.eclipse.php.composer.tests 5.2.0.201712021751) requires 'bundle org.eclipse.dltk.core.tests 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-01-24 09:04:36.215
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.215
+!MESSAGE From: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.215
+!MESSAGE To: org.eclipse.php.composer.tests [5.2.0.201712021751]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-01-24 09:04:36.261
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-01-24 09:04:36.261
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.261
+!MESSAGE Software being installed: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.261
+!MESSAGE Missing requirement: Composer Test plugin 5.2.0.201712021751 (org.eclipse.php.composer.tests 5.2.0.201712021751) requires 'bundle org.eclipse.dltk.core.tests 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-01-24 09:04:36.261
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.261
+!MESSAGE From: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.261
+!MESSAGE To: org.eclipse.php.composer.tests [5.2.0.201712021751]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-01-24 09:04:36.292
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-01-24 09:04:36.292
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.292
+!MESSAGE Software being installed: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.292
+!MESSAGE Missing requirement: Composer Test plugin 5.2.0.201712021751 (org.eclipse.php.composer.tests 5.2.0.201712021751) requires 'bundle org.eclipse.dltk.core.tests 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-01-24 09:04:36.292
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.292
+!MESSAGE From: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.292
+!MESSAGE To: org.eclipse.php.composer.tests [5.2.0.201712021751]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-01-24 09:04:36.294
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-01-24 09:04:36.295
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.295
+!MESSAGE Software being installed: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.295
+!MESSAGE Missing requirement: Composer Test plugin 5.2.0.201712021751 (org.eclipse.php.composer.tests 5.2.0.201712021751) requires 'bundle org.eclipse.dltk.core.tests 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-01-24 09:04:36.296
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.296
+!MESSAGE From: PHP Development Tools (PDT) JUnit Tests 5.2.0.201712021751 (org.eclipse.php.test.feature.group 5.2.0.201712021751)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-01-24 09:04:36.296
+!MESSAGE To: org.eclipse.php.composer.tests [5.2.0.201712021751]
+!SESSION 2018-01-24 09:42:25.130 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 09:52:04.370
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 09:52:04.370
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content-1003850517.jar at line 59048, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 802, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 919, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1777, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1939, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2200, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2813, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2861, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:10:05.885
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 4480, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2018-01-24 10:11:28.440
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.compositeRepository
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.addRepository(CachingRepositoryManager.java:412)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:209)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:211)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:275)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:784)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:142)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
+	at org.eclipse.equinox.p2.operations.UpdateOperation$1.run(UpdateOperation.java:323)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:37)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:111)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:92)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$6.run(AutomaticUpdater.java:351)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:984)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:1011)
+	at org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper.getService(ServiceHelper.java:27)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:512)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:117)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 32 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-01-24 10:11:28.440
+!MESSAGE An internal error occurred during: "Update validate job".
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:211)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:275)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:784)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:142)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
+	at org.eclipse.equinox.p2.operations.UpdateOperation$1.run(UpdateOperation.java:323)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:37)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:111)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:92)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$6.run(AutomaticUpdater.java:351)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.findMatchingRepositoryExtensions(AbstractRepositoryManager.java:404)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:763)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 18 more
+!SESSION 2018-01-24 10:11:28.792 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.mpc.ui 1 2 2018-01-24 10:35:35.848
+!MESSAGE Skipping update check for repository 'https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download' - failed to read repository. Affected entries: 
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$13.run(MarketplaceCatalog.java:279)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-01-24 10:35:35.850
+!MESSAGE No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+!SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2018-01-24 10:35:35.850
+!MESSAGE AppLaud PhoneGap for Android with JSLint/JSHint 1.2
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 802, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 919, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1777, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 1939, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2200, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2813, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 2861, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:35:51.181
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content542845348.jar at line 4480, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.epp.mpc.ui 1 2 2018-01-24 10:36:06.258
+!MESSAGE Skipping update check for repository 'https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download' - failed to read repository. Affected entries: 
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$13.run(MarketplaceCatalog.java:279)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-01-24 10:36:06.258
+!MESSAGE No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+!SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2018-01-24 10:36:06.258
+!MESSAGE AppLaud PhoneGap for Android with JSLint/JSHint 1.2
+
+!ENTRY org.eclipse.epp.mpc.ui 1 2 2018-01-24 10:36:48.919
+!MESSAGE Skipping update check for repository 'https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download' - failed to read repository. Affected entries: 
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$13.run(MarketplaceCatalog.java:279)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-01-24 10:36:48.920
+!MESSAGE No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
+!SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2018-01-24 10:36:48.920
+!MESSAGE AppLaud PhoneGap for Android with JSLint/JSHint 1.2
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2018-01-24 10:47:26.765
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2018-01-24 10:47:26.765
+!MESSAGE Error in file:/C:/Users/Loïc/.p2/org.eclipse.equinox.p2.repository/cache/content-1003850517.jar at line 59048, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-01-24 11:05:05.315
+!MESSAGE The workspace will exit with unsaved changes in this session.

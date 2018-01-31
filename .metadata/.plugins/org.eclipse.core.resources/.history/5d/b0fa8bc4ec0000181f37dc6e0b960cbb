@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Controller;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+use src\modele\User;
+
+class UsersController extends Controller
+{
+    /**
+     * @Route("/users", name="users")
+     */
+    public function index()
+    {
+        $user = new User("M. DUPONT");
+        $user->addCompetence("Symfony");
+        $user->addCompetence("EmberJS");
+        return $this->render("users/users.html.twig",["user"=>$user]);
+    }
+    /**
+     * @Route("/hello/{qui}")
+     */
+    public function test($qui){
+        return new response("Hello ".$qui);
+    }
+}
