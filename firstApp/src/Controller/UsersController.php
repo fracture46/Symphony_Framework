@@ -19,7 +19,7 @@ class UsersController extends Controller
         $user->addCompetence("Symfony");
         $user->addCompetence("EmberJS");
         $session->set("user", $user);
-        return $this->render("users/users.html.twig",["user"=>$user]);
+        return $this->render("users/users.html.twig",["user"=>$user,"competences"=>$user->getCompetences()]);
     }
     /**
      * @Route("/hello/{qui}")

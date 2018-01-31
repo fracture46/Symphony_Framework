@@ -15,11 +15,11 @@ class __TwigTemplate_54ea79873b544bbb15030f4d45058703d6b98aa84cc81b143afd23bcce3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c56c84d57f6f9845c0be72bd627957ede4fc3ce09009731a63f3d7da906affe3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c56c84d57f6f9845c0be72bd627957ede4fc3ce09009731a63f3d7da906affe3->enter($__internal_c56c84d57f6f9845c0be72bd627957ede4fc3ce09009731a63f3d7da906affe3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/users.html.twig"));
+        $__internal_88949394f7923c6b723ef0565d973caac7ac564d20a15aa7d22dfaf28828b5f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_88949394f7923c6b723ef0565d973caac7ac564d20a15aa7d22dfaf28828b5f0->enter($__internal_88949394f7923c6b723ef0565d973caac7ac564d20a15aa7d22dfaf28828b5f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/users.html.twig"));
 
-        $__internal_f36bfe9ae49d562c6dbb102cb55928f517d2f13cd6b2c5dac53d8f95795cbd35 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f36bfe9ae49d562c6dbb102cb55928f517d2f13cd6b2c5dac53d8f95795cbd35->enter($__internal_f36bfe9ae49d562c6dbb102cb55928f517d2f13cd6b2c5dac53d8f95795cbd35_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/users.html.twig"));
+        $__internal_dadd75788afe8f657697727352641f3a87a6941b08a2a09c1c190dcc48b9eb80 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dadd75788afe8f657697727352641f3a87a6941b08a2a09c1c190dcc48b9eb80->enter($__internal_dadd75788afe8f657697727352641f3a87a6941b08a2a09c1c190dcc48b9eb80_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "users/users.html.twig"));
 
         // line 1
         echo "<h1>Utilisateur</h1>
@@ -28,12 +28,29 @@ class __TwigTemplate_54ea79873b544bbb15030f4d45058703d6b98aa84cc81b143afd23bcce3
         echo twig_escape_filter($this->env, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new Twig_Error_Runtime('Variable "user" does not exist.', 2, $this->getSourceContext()); })()), "html", null, true);
         echo "
 <h2>Compétences</h2>
+<ul>
+\t";
+        // line 5
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["competences"]) || array_key_exists("competences", $context) ? $context["competences"] : (function () { throw new Twig_Error_Runtime('Variable "competences" does not exist.', 5, $this->getSourceContext()); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["comp"]) {
+            // line 6
+            echo "\t    <li>";
+            echo twig_escape_filter($this->env, $context["comp"], "html", null, true);
+            echo "</li>
+\t ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comp'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 8
+        echo "</ul>
 ";
         
-        $__internal_c56c84d57f6f9845c0be72bd627957ede4fc3ce09009731a63f3d7da906affe3->leave($__internal_c56c84d57f6f9845c0be72bd627957ede4fc3ce09009731a63f3d7da906affe3_prof);
+        $__internal_88949394f7923c6b723ef0565d973caac7ac564d20a15aa7d22dfaf28828b5f0->leave($__internal_88949394f7923c6b723ef0565d973caac7ac564d20a15aa7d22dfaf28828b5f0_prof);
 
         
-        $__internal_f36bfe9ae49d562c6dbb102cb55928f517d2f13cd6b2c5dac53d8f95795cbd35->leave($__internal_f36bfe9ae49d562c6dbb102cb55928f517d2f13cd6b2c5dac53d8f95795cbd35_prof);
+        $__internal_dadd75788afe8f657697727352641f3a87a6941b08a2a09c1c190dcc48b9eb80->leave($__internal_dadd75788afe8f657697727352641f3a87a6941b08a2a09c1c190dcc48b9eb80_prof);
 
     }
 
@@ -49,7 +66,7 @@ class __TwigTemplate_54ea79873b544bbb15030f4d45058703d6b98aa84cc81b143afd23bcce3
 
     public function getDebugInfo()
     {
-        return array (  28 => 2,  25 => 1,);
+        return array (  47 => 8,  38 => 6,  34 => 5,  28 => 2,  25 => 1,);
     }
 
     public function getSourceContext()
@@ -57,6 +74,11 @@ class __TwigTemplate_54ea79873b544bbb15030f4d45058703d6b98aa84cc81b143afd23bcce3
         return new Twig_Source("<h1>Utilisateur</h1>
 {{user}}
 <h2>Compétences</h2>
+<ul>
+\t{% for comp in competences %}
+\t    <li>{{comp}}</li>
+\t {% endfor %}
+</ul>
 ", "users/users.html.twig", "C:\\Users\\LoÃ¯c\\Documents\\IUT\\M4102 Framework WEB\\symphony-tds\\firstApp\\templates\\users\\users.html.twig");
     }
 }

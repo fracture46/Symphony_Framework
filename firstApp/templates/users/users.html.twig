@@ -1,3 +1,8 @@
 <h1>Utilisateur</h1>
 {{user}}
 <h2>Compétences</h2>
+<ul>
+	{% for comp in competences %}
+	    <li>{{comp}}</li>
+	 {% endfor %}
+</ul>
