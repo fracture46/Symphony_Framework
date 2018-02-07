@@ -1,14 +1,28 @@
-{% extends 'index.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block title %}Créer un contact{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 {% block menu %}{% endblock %}
 
 {% block body %}
-	<form action="POST">
-	<label for="prenom">Prénom</label><input type="text" name="prenom"/>
-	<label for="nom">Nom</label><input type="text" name="nom"/>
-	<label for="email">Email</label><input type="email" name="email"/>
-	<label for="tel">Téléphone</label><input type="tel" name="tel"/>
-	<label for="mobile">Mobile</label><input type="tel" name="mobile"/>
+	<form action="{{ path("valider_contact") }}" method="POST" class="ui form">
+		<input type="hidden" name="id" value="{{ id }}"/>
+		<div class="field">
+			<label for="prenom">Prenom</label><input type="text" value="{{ contact.prenom }}"/>
+		</div>
+		<div class="field">
+			<label for="nom">Nom</label><input type="text" id="nom" value="{{ contact.nom }}"/>
+		</div>
+		<div class="field">
+			<label for="email">Email</label><input type="email" value="{{ contact.email }}"/>
+		</div>
+		<div class="field">
+			<label for="tel">Telephone</label><input type="tel" value="{{ contact.tel }}"/>
+		</div>
+		<div class="field">
+			<label for="mobile">Mobile</label><input type="tel" value="{{ contact.mobile }}"/>
+		</div>
+		<div class="field">
+		<input type="submit" value="Valider"/>
+		</div>
 	</form>
 {% endblock %}

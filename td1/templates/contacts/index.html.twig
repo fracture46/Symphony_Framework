@@ -1,21 +1,28 @@
-<?DOCTYPE HTML>
-<head>
-	<meta charset="UTF-8">
-	<title>Appli - Contacts</title>
-</head>
-<header>
-<h1>Appli - Contacts</h1>
-<h2>{% block title %}Liste des contacts{% endblock %}</h2>
-<ul>{% block menu %}<li>option1</li> <li>option2</li> <li>option3</li> {% endblock %}</ul>
-</header>
-<body>
-{% block body %}{% endblock %}
-	<h3>Contacts</h3>
-	<ul>
+{% extends 'base.html.twig' %}
+
+{% block maintitle %}Appli - Contacts{% endblock %}
+
+{% block title %}<h2>Liste des contacts</h2>{% endblock %}
+{% block menu %}
+<a href="{{ path("nouveau_contact") }}">Ajouter</a>
+{% endblock %}
+
+{% block body %}
+<h3>Contacts</h3>
+<table>
+	<tbody>
 		{% for cont in contacts %}
-		    <li>{{cont.nom}}</li>
-		 {% endfor %}
-	</ul>
-</body>
-<footer>Mentions lÃ©gales : "Appli - Contacts" by LoÃ¯c Bitter, vers. 1.0, licence ?</footer>
-</html>
+		    <tr>
+		    <td>{{cont.nom}}</td> 
+		    <td><a href="{{ path("modifier_contact", {'id':loop.index}) }}" class="ui icon button xs">
+					<i class="write icon"></i>
+				</a></td>
+		    <td><a href="{{ path("supprimer_contact", {'id':loop.index}) }}">Supprimer</a></td>
+		 	</tr>
+		{% endfor %}
+	</tbody>
+</table>	
+{% endblock %}
+	
+{% block footer %}Mentions légales : "Appli - Contacts" by Loïc Bitter, vers. 1.0, licence ?
+{% endblock %}

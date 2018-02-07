@@ -21,22 +21,22 @@ class ContactSessionManager implements IModelManager
     
     public function getAll()
     {
-        return $this->session->get('contacts',[]);
+        return $this->session->get('contacts');
     }
 
     public function select($index)
     {
-        return $this->session->get('contacts',[$index]);
+        return $this->session->get('contacts')[$index];
     }
 
     public function get($index)
     {
-        return $this->session->get('contacts',[$index]);
+        return $this->session->get('contacts')[$index];
     }
 
     public function count()
     {
-        return $this->session->count('contacts'); // ???
+        return $this->session->count('contacts');
     }
 
     public function insert($object)
@@ -47,8 +47,15 @@ class ContactSessionManager implements IModelManager
     }
 
     public function update($object, $values)
-    {
-        
+    { //values = tableau associatif de ce qui est posté dans le form
+      // object = l'objet auquel on souhaite affecter les values
+        foreach($values as $key=>$value){
+            //key = nom, prenom / value = la valeur du form
+            $accesseur="set".$key;
+            if(method_exists($object, $accesseur)) // vérifie que l'accesseur existe
+               call_user_func_array([$object, $accesseur],[$values]);
+            // utilise un tableau de param pour l'affectation
+        }
     }
 
     public function filterBy($keyAndValues)
@@ -58,7 +65,7 @@ class ContactSessionManager implements IModelManager
 
     public function delete($index)
     {
-        return $this->session->remove('contacts',[$index]);
+        return $this->session->remove('contacts')[$index];
     }
 
 }
