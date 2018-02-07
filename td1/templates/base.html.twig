@@ -2,11 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block maintitle %}>Appli - Contacts{% endblock %}</title>
+        {% block stylesheets %}
+        	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+        	<!-- CSS Semantique -->
+        {% endblock %}
     </head>
     <body>
+    	{% block titre %}{% endblock %}
+    	{% block menu %}{% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+        	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+        	<!-- JS Semantique -->
+        {% endblock %}
     </body>
+    <footer>{% block footer %}{% endblock %}</footer>
 </html>
