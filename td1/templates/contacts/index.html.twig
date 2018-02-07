@@ -1,0 +1,21 @@
+<?DOCTYPE HTML>
+<head>
+	<meta charset="UTF-8">
+	<title>Appli - Contacts</title>
+</head>
+<header>
+<h1>Appli - Contacts</h1>
+<h2>{% block title %}Liste des contacts{% endblock %}</h2>
+<ul>{% block menu %}<li>option1</li> <li>option2</li> <li>option3</li> {% endblock %}</ul>
+</header>
+<body>
+{% block body %}{% endblock %}
+	<h3>Contacts</h3>
+	<ul>
+		{% for cont in contacts %}
+		    <li>{{cont.nom}}</li>
+		 {% endfor %}
+	</ul>
+</body>
+<footer>Mentions légales : "Appli - Contacts" by Loïc Bitter, vers. 1.0, licence ?</footer>
+</html>

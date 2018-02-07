@@ -1,0 +1,14 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Créer un contact{% endblock %}
+{% block menu %}{% endblock %}
+
+{% block body %}
+	<form action="POST">
+	<label for="prenom">Prénom</label><input type="text" name="prenom"/>
+	<label for="nom">Nom</label><input type="text" name="nom"/>
+	<label for="email">Email</label><input type="email" name="email"/>
+	<label for="tel">Téléphone</label><input type="tel" name="tel"/>
+	<label for="mobile">Mobile</label><input type="tel" name="mobile"/>
+	</form>
+{% endblock %}
