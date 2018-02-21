@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{%  block body %}
+    {{ q["bts"] | raw }}
+    <!-- q est le tableau des composants créés et raw permet d'afficher du html
+     afin d'éviter un appel de htmlentities() qui afficherait alors le code et
+     pas le bouton  -->
+    <div id="response" class="ui segment"></div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }} 
+    {{ script_foot | raw }}
+    <!-- insère automatiquement le code retourné par JQuery -->
+{% endblock %}
