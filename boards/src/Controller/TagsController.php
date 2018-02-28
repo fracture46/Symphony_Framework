@@ -36,6 +36,6 @@ class TagsController extends Controller{
             $tag->setColor($request->get("color"));
             $tagRepo->update($tag);
         }
-        return $this->forward("App\Controller\TagsController::tags");
+        return $this->forward("App\Controller\TagsController::index");
     }
 } 

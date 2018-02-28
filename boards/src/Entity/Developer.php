@@ -26,6 +26,22 @@ class Developer
      * @ORM\Column(name="identity", type="string", length=60, nullable=false)
      */
     private $identity;
+    /**
+     * @return string
+     */
+    public function getIdentity()
+    {
+        return $this->identity;
+    }
+
+    /**
+     * @param string $identity
+     */
+    public function setIdentity($identity)
+    {
+        $this->identity = $identity;
+    }
+
 
 
 }
