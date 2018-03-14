@@ -9,7 +9,7 @@ class DeveloperGui extends JquerySemantic{
     public function dataTable($devs){
         $frm=$this->_semantic->dataTable("devs", "App\Entity\Developer",$devs);
         // créé une table HTML avec des comportements supplémentaires
-        // affiche les éléaments de $devs
+        // affiche les éléments de $devs
         $frm->setFields(["identity"]);
         $frm->setCaptions(["Identity"]);
         $frm->setValueFunction("identity", function($v,$dev){
@@ -18,12 +18,12 @@ class DeveloperGui extends JquerySemantic{
         });
             $frm->addEditButton();
             $frm->setUrls(["edit"=>"developer/update"]);
-            $frm->setTargetSelector("#update-tag");
+            $frm->setTargetSelector("#update-dev");
             return $frm;
     }
     
     public function frm(Developer $dev){
-        $frm=$this->_semantic->dataForm("frm-tag", $dev);
+        $frm=$this->_semantic->dataForm("frm-dev", $dev);
         $frm->setFields(["id","identity","submit","cancel"]);
         $frm->setCaptions(["","Identity","Valider","Annuler"]);
         $frm->fieldAsHidden("id");

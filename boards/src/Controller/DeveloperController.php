@@ -21,6 +21,14 @@ class DeveloperController extends Controller
     }
     
     /**
+     * @Route("/developer/update/{id}", name="editDeveloper")
+     */
+    public function editDev(Developer $dev, DeveloperGui $devGui){
+        $devGui->frm($dev);
+        return $devGui->renderView('developer/form.html.twig');
+    }
+    
+    /**
      * @Route("/developer/submit", name="dev_submit")
      */
     public function submit(Request $request, DeveloperRepository $devRepo){
@@ -32,11 +40,4 @@ class DeveloperController extends Controller
         return $this->forward("App\Controller\DeveloperController::index");
     }
     
-    /**
-     * @Route("/developer/update/{id}", name="editDeveloper")
-     */
-    public function editDev(Developer $dev, DeveloperGui $devGui){
-        $devGui->frm($dev);
-        return $devGui->renderView('developer/index.html.twig');
-    }
 }

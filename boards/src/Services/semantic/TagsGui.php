@@ -27,7 +27,6 @@ class TagsGui extends JquerySemantic{
         $colors=Color::getConstants();
         $frm=$this->_semantic->dataForm("frm-tag", $tag);
         $frm->setFields(["id","title","color","submit","cancel"]);
-        // qu'est-ce que ça fait ?
         $frm->setCaptions(["","Title","Color","Valider","Annuler"]);
         $frm->fieldAsHidden("id");
         $frm->fieldAsInput("title",["rules"=>["empty","maxLength[30]"]]);
