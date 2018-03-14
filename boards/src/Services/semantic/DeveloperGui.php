@@ -12,6 +12,7 @@ class DeveloperGui extends JquerySemantic{
         // affiche les éléments de $devs
         $frm->setFields(["identity"]);
         $frm->setCaptions(["Identity"]);
+        $frm->setIdentifierFunction("getId");
         $frm->setValueFunction("identity", function($v,$dev){
             $lbl=new HtmlLabel("",$dev->getIdentity());
             return $lbl;
@@ -33,6 +34,20 @@ class DeveloperGui extends JquerySemantic{
         $frm->fieldAsSubmit("submit","positive","developer/submit", "#devs",["ajax"=>["attr"=>"","jqueryDone"=>"replaceWith"]]);
         $frm->fieldAsLink("cancel",["class"=>"ui button cancel"]);
         $this->click(".cancel","$('#frm-dev').hide();");
+        return $frm;
+    }
+    
+    public function frmNew(){
+        $frm=$this->_semantic->dataForm("frm-new-dev");
+        $frm->setFields(["id","identity","submit","cancel"]);
+        $frm->setCaptions(["","Identity","Valider","Annuler"]);
+        $frm->fieldAsHidden("id");
+        $frm->fieldAsInput("identity",["rules"=>["empty","maxLength[30]"]]);
+        $frm->setValidationParams(["on"=>"blur","inline"=>true]);
+        $frm->onSuccess("$('#frm-new-dev').hide();");
+        $frm->fieldAsSubmit("submit","positive","developer/submit", "#devs",["ajax"=>["attr"=>"","jqueryDone"=>"replaceWith"]]);
+        $frm->fieldAsLink("cancel",["class"=>"ui button cancel"]);
+        $this->click(".cancel","$('#frm-new-dev').hide();");
         return $frm;
     }
 }
