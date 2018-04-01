@@ -21,6 +21,14 @@ class DeveloperController extends Controller
     }
     
     /**
+     * @Route("/developer/new", name="newDeveloper")
+     */
+    public function newDev(DeveloperGui $devGui){
+        $devGui->frmNew();
+        return $devGui->renderView('developer/new.html.twig');
+    }
+    
+    /**
      * @Route("/developer/update/{id}", name="editDeveloper")
      */
     public function editDev(Developer $dev, DeveloperGui $devGui){
