@@ -7,6 +7,7 @@ use App\Services\semantic\ProjectsGui;
 use App\Repository\ProjectRepository;
 use Symfony\Component\HttpFoundation\Request;
 use App\Repository\DeveloperRepository;
+use App\Repository\StepRepository;
 use App\Repository\TagRepository;
 
 class ProjectsController extends CrudController{
@@ -88,5 +89,26 @@ class ProjectsController extends CrudController{
     	$this->gui->getOnClick(".nav-stories", "","#block-body",["attr"=>"data-ajax"]);
     	$this->gui->listStories($project->getStories(),$tagRepo);
     	return $this->gui->renderView("projects/stories.html.twig",["project"=>$project]);
+    }
+    
+    /**
+     * @Route("/project/{idProject}/board", name="board")
+     */
+    public function dashboard($idProject,TagRepository $tagRepo){
+        $project=$this->repository->get($idProject);
+        $this->gui->getOnClick(".nav-stories", "","#block-body",["attr"=>"data-ajax"]);
+        $this->gui->listStories($project->getStories(),$tagRepo);
+        return $this->gui->renderView("projects/dashboard.html.twig",["project"=>$project]);
+    }
+    
+    protected function getStepsAndStories($project,StepRepository $stepRepo){
+        $steps=$stepRepo->findAll();
+        $stories=$project->getStories()->toArray();
+        foreach ($steps as $step){
+            $step->stories=array_filter($stories,function($story) use($step){
+                return ($story->getStep()==$step->getTitle());
+            });
+        }
+        return $steps;
     }
 }
